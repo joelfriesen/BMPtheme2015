@@ -1,0 +1,161 @@
+/* UNI FORM */
+form {
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+form br {
+	display:none;
+}
+form p {
+	overflow: hidden;
+	clear: both;
+}
+form textarea, 
+form .fileupload,
+form .textinput,
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="search"],
+form input[type="tel"],
+form input[type="submit"],
+form select,
+form .selectinput{
+	border:1px solid #dfdfdf;
+	background:#dedee5 * 2;
+	margin:1% 0;
+	padding:1%;
+	display: block;
+	vertical-align: top;
+	float:right;
+}
+.spanthree{
+	form textarea, 
+	form .fileupload,
+	form .textinput,
+	form input[type="text"],
+	form input[type="password"],
+	form input[type="email"],
+	form input[type="search"],
+	form input[type="tel"],
+	form select,
+	form .selectinput{
+		width:97.6%;
+	}
+}
+form label{
+	display:block;
+	vertical-align: top;
+	text-align:left;
+	clear: left;
+}
+form label em {
+	font-style:italic;
+	font-weight:normal;
+}
+form .radiogroup label,
+form .checkgroup label,
+form .radiogroup input,
+form .checkgroup input{
+	width:auto;
+}
+form fieldset {
+	border:none;
+	margin:0;
+	padding:0;
+}
+form fieldset legend {
+	color:#000;
+	font-weight:bold;
+	background:none;
+	margin:0;
+	padding:.5em 0;
+	clear:both;
+	display:block;
+}
+form .formhint{
+	color:#999;
+	display:block;
+	line-height:1.2em;
+	font-size:.818em
+}
+
+/* FANCY PANTS BUTTONS */
+button,
+form input[type="submit"],
+a.more-link,
+.main a[href $='.pdf'],
+.main a[href $='.doc'],
+.main a[href $='.docx'],
+.qa-permalink{
+	border:1px solid #dfdfdf;
+	margin:.5em 0;
+	padding:0.4em 1.2em;
+	display: block;
+	vertical-align: top;
+	text-align:center;
+	text-decoration: none;
+	overflow: hidden;
+	background:#dedee5;
+	width:auto;
+	@media only screen and (min-width: 0) and (max-width: $teenbreak) {
+		padding:1em 1.2em;
+	}
+	&:hover{
+		background: $body_link_color;
+		color:black;
+	}
+}
+form input[type="submit"]{
+width:100%;
+}
+.subcol ul li a[href $='.pdf'],
+.subcol ul li a[href $='.doc'],
+.subcol ul li a[href $='.docx']{
+	background:#dedee5;
+	margin:0;
+	border:0px solid #dfdfdf;
+	color: $splashcolorbright;
+	background:$nav_bg;
+	text-align:left;
+	@media only screen and (min-width: 0) and (max-width: $teenbreak) {
+		line-height: inherit;
+	}
+	&:hover{
+		background:$nav_hover_bg;
+		color: #000;
+	}
+	&:after {
+		color:  $splashcolorbright;
+		}
+	&:hover:after {
+		color: #000;
+		}
+}
+
+a[href $='.pdf']:after {
+		margin-left: 0.2em;
+		font-size: 0.9em;
+		color: $splashcolor;
+		content: "- \f15c    PDF";
+		font-family: 'FontAwesome';
+		}
+
+a[href $='.pdf']:hover:after {
+		color: #000;
+		}
+
+a[href $='.doc']:after,
+a[href $='.docx']:after {
+		margin-left: 0.2em;
+		font-size: 0.9em;
+		color: $splashcolor;
+		content: "- \f0f6    DOC";
+		font-family: 'FontAwesome';
+		}
+
+a[href $='.doc']:hover:after,
+a[href $='.docx']:hover:after {
+		color: #000;
+		}

@@ -1,0 +1,193 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Forms
+	#Misc */
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: inherit; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+
+/* #Basic Styles
+================================================== */
+	body {
+		background: #fff;
+		font: 1em/2em Arial, sans-serif;
+		color: #111;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+		 }
+
+
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $googlefont1;
+		font-weight: normal; 
+		margin: 0.7em 0 0.5em 0; 
+		line-height: 1em;}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit;  }
+	h1 { font-size: 2.8em; color: $darkcolor}
+	h2 { font-size: 2.2em;}
+	h3 { font-size: 1.8em; color: $splashcolor}
+	h4 { font-size: 1.4em;}
+	h5, h6 { margin: 1.5em 0 .5em 0; font-style: italic; }
+	.subheader { color: #777; }
+
+	p { margin: .25em 0 1em 0; }
+	p img { margin: 0; }
+	p.lead { font-size: 1.2em; line-height: 2em; color: #777;  }
+
+	em { font-style: italic; }
+	strong { font-weight: bold; }
+	small { font-size: 80%; }
+
+/*	Tables 
+================================================== */
+	table { margin: 1em 0; border: 1px solid #BBB; border-width: 0 0 1px 0; width: 100% }
+	tr { border: solid #BBB; border-width: 1px 0 0 1px; }
+	th, td { padding: 0.5em; vertical-align: top; border: solid #BBB; border-width: 0 1px 0 0; }
+	th { font-weight: bold; background: #BBB; }
+	td { text-align: center; }
+	th[scope="col"], thead th, thead td { border-bottom: 1px solid #CCC; text-align: left; }
+	th[scope="row"] { border-right: 1px solid #CCC; text-align: right; }
+	tfoot th, tfoot td { border-top: 1px solid #BBB; border-width: 0 1px 0 0; background: #EEE; }
+
+/*	Blockquotes 
+================================================== */
+	blockquote { margin: 20px 0 0 0; padding: 0 0 0 25px; font-style: italic; color: #808080; background: url(images/quote.png) no-repeat; }
+	blockquote cite { display: block; color: #808080; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #808080; }
+
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 20px; height: 0; }
+
+
+/* #Links
+================================================== */
+	a, a:visited { color: $body_link_color; text-decoration: underline; outline: 0; }
+	a:hover, a:focus { color: $body_link_hover_color; }
+	p a, p a:visited { line-height: inherit; }
+
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 25px; margin-left: 20px;}
+	ul { list-style: circle outside; }
+	ol { list-style: decimal;}
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 25px;}
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li {  }
+
+
+/* #Images
+================================================== */
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+
+/* #Forms
+================================================== */
+	fieldset { border: 1px solid #CCCCCC; margin-top: 1em; }
+	legend { background: #FFFFFF none repeat scroll 0%; margin: 0 .4em; padding: 0 .1em }
+	label { font-size: 1em;}
+	input { font-size: 1em; padding: .2em; font-family: inherit; }
+	textarea { font-size: 1em; padding: .2em; font-family: Arial, Helvetica, sans-serif; }
+	select, button { cursor: pointer; padding: 0.1em; }
+
+/* #Misc
+================================================== */
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+	tt,code,samp,kbd {
+	background: #DDDDDD none repeat scroll 0 0;
+	border: 1px solid #000;
+	font-family: "Courier New", Courier, mono;
+	margin: 0 0.2em;
+	padding: 0.2em 0.4em;
+	word-wrap: break-word;
+}
+pre {
+	border: 1px solid #bbb;
+	padding: 0 0.5em;
+	margin: .5em 0 1em 0;
+	font: 1em/1.6em Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+	background: #eee;
+	background-image: -webkit-linear-gradient(#F4F4F4 50%, #E7E7E7 50%);
+	background-image: -moz-linear-gradient(#F4F4F4 50%, #E7E7E7 50%);
+	background-image: -o-linear-gradient(#F4F4F4 50%, #E7E7E7 50%);
+	background-image: linear-gradient(#F4F4F4 50%, #E7E7E7 50%);
+	background-size: 1em 3.2em;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+pre code{
+	padding: 0 0.5em;
+	margin: .5em 0 1em 0;
+	background: none;
+	border: none;
+	font: 1em/1.6em Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+sup {vertical-align: super;
+  font-size: smaller;}
+
+i, cite, em, var, address, dfn {
+  font-style: italic;
+}
+
+abbr, acronym {
+  border-width: 0 0 1px 0;
+  border-style: dashed;
+  border-color: #000; 
+  cursor:help;}
+
+  sub {
+  	vertical-align: sub;
+  	font-size: smaller;
+  }

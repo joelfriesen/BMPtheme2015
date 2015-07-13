@@ -1,0 +1,29 @@
+/* REUSABLE AND COMMON STYLES */ 
+.imageleft, .alignleft { float:left; margin-right:10px; }
+.imageright, .alignright { float:right; margin-left:10px; }
+.nomargin { margin:0; }
+.invis { display: none; height: 0; margin: 0; padding: 0; visibility: hidden; width: 0; }
+.smallcontentbox a.more-link { position:relative; left: 252px;}
+.indexintro a { text-decoration:none; }
+.indexintro a:hover, .indexintro a:focus { text-decoration:none; }
+#fbsharebutton { width:94px; float:right; }
+.g-plusone { float:left; }
+table.zebra { background:#FFF none repeat scroll 0%; }
+table.zebra th { background:#DDD none repeat scroll 0%; }
+table.zebra .altrow { background:#EEE none repeat scroll 0%; }
+.twtr-timeline { margin-top: .5em; }
+.twtr-widget {margin:0 0 20px 0; clear: both;}
+.grey { color:#888 }
+.aligncenter { margin:0 auto; }
+.smalltext {font-size:.8em;}
+.scalingimage {width: 100%;height: auto;}
+a[href $='.ppt'],
+a[href $='.xls'],
+a[href $='.doc'],
+a[href $='.pdf'],
+a[href ~='mailto:']{ background:transparent url(images/link-icons.gif) -60px -60px no-repeat; margin:0; padding:0 0 0 15px; }
+a[href $='.ppt'] { background-position:-60px 0; }
+a[href $='.xls'] { background-position:-48px -12px; }
+a[href $='.doc'] { background-position:-36px -24px; }
+a[href $='.pdf'] { background-position:-24px -36px; }
+a[href ~='mailto:'] { background-position:0 -60px; }

@@ -1,0 +1,285 @@
+/* WORDPRESS CAPTIONS
+====================================================================================================*/
+
+.wp-caption {
+  text-align: center;
+  clear: both;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  color: #fff;
+  margin-bottom: 20px;
+  display: block;
+  line-height: 25px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: $googlefont1;
+  border: 1px solid #ddd;
+  color: #666;
+  background: #EEE;
+  background-image: -webkit-linear-gradient(top, whitesmoke, #f1f1f1);
+  background-image: -moz-linear-gradient(top, whitesmoke, #f1f1f1);
+  background-image: -ms-linear-gradient(top, whitesmoke, #f1f1f1);
+  background-image: -o-linear-gradient(top, whitesmoke, #f1f1f1);
+  background-image: linear-gradient(top, whitesmoke, #f1f1f1);
+  img {
+  border: 1px solid #bbb;
+  margin: 0;
+  padding: 4px;
+  }
+  a{text-decoration:none;}
+}
+
+
+.wp-caption-dd {
+	margin: 0;
+	padding: 0 4px 5px;
+}
+
+.wp-caption,
+.gallery-item {
+	position: relative;
+}
+
+.wp-caption-text {
+	color: #BBB;
+	text-align: center;
+	padding: 0 3%;
+	margin: 0;
+	display: block;
+}
+
+.wp-caption-text a {
+	display: block;
+	color: #fff;
+	padding: 5px 0;
+}
+
+/* WORDPRESS COMMENTS
+====================================================================================================*/
+.commentlist {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+ol.commentlist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ol.commentlist li {
+	border: 2px solid #DFDFDF;
+	margin: 0 0 1em;
+	padding: .5em .5em .5em 5em;
+	position: relative;
+	list-style-type: none;
+}
+
+ol.commentlist li.pingback comment-author {
+	padding: 0 170px 0 0;
+}
+
+ol.commentlist li div.vcard {
+	font-weight: bold;
+}
+
+ol.commentlist li div.vcard cite.fn {
+	font-style: normal;
+	padding: 0;
+	display: inline;
+	text-align: left;
+}
+
+ol.commentlist li div.vcard cite.fn a.url {
+	color: #cc0000;
+	text-decoration: none;
+}
+
+ol.commentlist li div.vcard cite.fn a.url:hover {
+	color: black;
+}
+
+ol.commentlist li div.vcard img.avatar {
+	background: #fff;
+	border: 1px solid #DFDFDF;
+	padding: .5em;
+	left: .5em;
+	float: left;
+	position: absolute;
+	top: .5em;
+}
+
+ol.commentlist li div.comment-meta {
+	font-weight: bold;
+	position: absolute;
+	right: 1em;
+	text-align: right;
+	top: .5em;
+}
+
+ol.commentlist li div.comment-meta a {
+	color: #205B87;
+	text-decoration: none;
+}
+
+ol.commentlist li p {}
+
+ol.commentlist li ul {
+	list-style: square;
+	margin: 0 0 12px;
+	padding: 0;
+}
+
+ol.commentlist li div.reply {
+	margin: 1em 0 0 0;
+}
+
+ol.commentlist li div.reply a {
+	padding: .2em 1em;
+	color: #000;
+	border: 2px solid #dfdfdf;
+	background: #f9f9f9;
+}
+
+ol.commentlist li div.reply a:hover {
+	background: #82b5f4;
+	color: #000;
+	text-decoration: none;
+}
+
+ol.commentlist li ul.children {
+	list-style: none;
+	margin: 1em 0 0;
+	text-indent: 0;
+}
+
+ol.commentlist li ul.children li.depth-2 {
+	margin: 0 0 0.5em;
+}
+
+ol.commentlist li ul.children li.depth-3 {
+	margin: 0 0 0.5em;
+}
+
+ol.commentlist li ul.children li.depth-4 {
+	margin: 0 0 0.5em;
+}
+
+ol.commentlist li ul.children li.depth-5 {
+	margin: 0 0 0.5em;
+}
+
+ol.commentlist ul.children li.odd {
+	background: white;
+}
+
+ol.commentlist ul.children li.even {
+	background: #f6f6f6;
+}
+
+ol.commentlist li.pingback div.vcard {
+	padding: 0 170px 0 0;
+}
+
+a#cancel-comment-reply-link {
+	margin: 0 .5em;
+	float: right;
+	padding: 0 4em;
+	color: #000;
+	text-decoration: none;
+	border: 2px solid #dfdfdf;
+	background: #f9f9f9;
+}
+
+a#cancel-comment-reply-link:hover {
+	background: #82b5f4;
+	color: #000;
+	text-decoration: none;
+}
+
+  /* Galleries and Albumsalleries
+====================================================================================================*/
+.photogallery {
+	overflow: hidden;
+}
+
+.gallerycol .gallerythumbnail img {
+	border: 1px solid #bbb;
+	margin: 0;
+	padding: 4px;
+}
+
+.gallerycol .imagetext a {
+	color: #BBB;
+	text-align: center;
+	padding: 0 3%;
+	margin: 0;
+	display: block;
+	text-decoration: none;
+}
+
+.mainimage {
+	width: 100%;
+	height: auto;
+}
+
+.gallery {overflow:hidden}
+
+.gallery-item {float:left; margin: 0px 10px 0 0 }
+
+  /* Tablepress Plugin
+====================================================================================================*/
+.tablepress {
+	border: 1px solid #bbbbbb !important;
+}
+
+.tablepress .column-1 {
+	width: 75%;
+}
+
+.tablepress .column-2 {
+	width: 25%;
+}
+
+.tablepress thead th,
+.tablepress tfoot th {
+	background: rgb(222, 222, 229);
+	background: -moz-linear-gradient(top, rgba(210, 210, 224, 1) 1%, rgba(222, 222, 229, 1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(177, 177, 177, 1)), color-stop(100%, rgba(202, 202, 202, 1)));
+	background: -webkit-linear-gradient(top, rgba(210, 210, 224, 1) 1%, rgba(222, 222, 229, 1) 100%);
+	background: -o-linear-gradient(top, rgba(210, 210, 224, 1) 1%, rgba(222, 222, 229, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(210, 210, 224, 1) 1%, rgba(222, 222, 229, 1) 100%);
+	background: linear-gradient(to bottom, rgba(210, 210, 224, 1) 1%, rgba(222, 222, 229, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedee5', endColorstr='#d2d2e0',GradientType=0 );
+}
+
+.contentbox,
+.contentarea {
+	position: relative;
+	overflow: hidden;
+	clear: both;
+}
+
+.excerpt {
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 79%, white 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(79%, white), color-stop(100%, white));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 79%, white 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 79%, white 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 79%, white 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 79%, white 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+	position: absolute;
+	bottom: 0;
+	text-align: right;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: block;
+	height: 130px;
+}
+
+.excerpt span {
+	display: none;
+}

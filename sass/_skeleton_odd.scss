@@ -1,0 +1,198 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Joel's FLoating Pancake Grid
+================================================== */
+
+    .container                                  { max-width: 960px; margin: 0 auto; padding: 0; overflow: hidden;}
+    .container .col                             { float: left; margin: 0 0 0 1%;}
+    .row                                        { margin-bottom: 20px;}
+
+    
+    /* Base Grid */
+    .onecol .col                    {width: 98%;}
+    .twocol .col                    {width: 48.5%;}
+    .threecol .col                  {width: 32%;} 
+        .threecol .spantwo          {width: 65%;}
+    .fourcol .col                   {width: 23.75%;}
+        .fourcol .spantwo           {width: 48.5%;}
+        .fourcol .spanthree         {width: 73.25%;}
+    .fivecol .col                   {width: 18.8%;}
+        .fivecol .spantwo           {width: 38.6%;}
+        .fivecol .spanthree         {width: 58.4%;}
+        .fivecol .spanfour          {width: 78.2%;}
+    .sixcol .col                    {width: 15.5%;}
+        .sixcol .spantwo            {width: 32%;}
+        .sixcol .spanthree          {width: 48.5%;}
+        .sixcol .spanfour           {width: 65%;}
+        .sixcol .spanfive           {width: 81.5%;}
+    .sevencol .col                  {width: 13.14%;}
+        .sevencol .spantwo          {width: 27.3%;}
+        .sevencol .spanthree        {width: 41.4%;}
+        .sevencol .spanfour         {width: 55.6%;}
+        .sevencol .spanfive         {width: 69.7%;}
+        .sevencol .spansix          {width: 83.9%;}
+    .eightcol .col                  {width: 11.37%;}
+        .eightcol .spantwo          {width: 23.7%;}
+        .eightcol .spanthree        {width: 36.1%;}
+        .eightcol .spanfour         {width: 48.5%;}
+        .eightcol .spanfive         {width: 60.85%;}
+        .eightcol .spansix          {width: 73.2%;}
+        .eightcol .spanseven        {width: 85.6%;}
+   
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container                                  { width: 768px; }
+
+
+    .onecol .col                    {width: 98%;}
+    .twocol .col                    {width: 48.5%;}
+    .threecol .col                  {width: 32%;} 
+        .threecol .spantwo          {width: 65%;}
+    .fourcol .col                   {width: 23.75%;}
+        .fourcol .spantwo           {width: 48.5%;}
+        .fourcol .spanthree         {width: 73.25%;}
+    .fivecol .col                   {width: 18.8%;}
+        .fivecol .spantwo           {width: 38.6%;}
+        .fivecol .spanthree         {width: 58.4%;}
+        .fivecol .spanfour          {width: 78.2%;}
+    .sixcol .col                    {width: 15.5%;}
+        .sixcol .spantwo            {width: 32%;}
+        .sixcol .spanthree          {width: 48.5%;}
+        .sixcol .spanfour           {width: 65%;}
+        .sixcol .spanfive           {width: 81.5%;}
+    .sevencol .col                  {width: 13.14%;}
+        .sevencol .spantwo          {width: 27.3%;}
+        .sevencol .spanthree        {width: 41.4%;}
+        .sevencol .spanfour         {width: 55.6%;}
+        .sevencol .spanfive         {width: 69.7%;}
+        .sevencol .spansix          {width: 83.9%;}
+    .eightcol .col                  {width: 11.37%;}
+        .eightcol .spantwo          {width: 23.7%;}
+        .eightcol .spanthree        {width: 36.1%;}
+        .eightcol .spanfour         {width: 48.5%;}
+        .eightcol .spanfive         {width: 60.85%;}
+        .eightcol .spansix          {width: 73.2%;}
+        .eightcol .spanseven        {width: 85.6%;}
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .container { width: 300px; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  { width: 300px; }
+
+       
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column { width: 420px; }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }

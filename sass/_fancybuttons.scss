@@ -1,0 +1,53 @@
+
+  /* FANCY PANTS BUTTONS */
+
+form textarea, 
+form .fileupload,
+form .textinput,
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="submit"],
+form select,
+a.more-link 
+  { 
+  display: block; 
+  line-height: 35px; 
+  text-align: center; 
+  text-decoration: none; 
+  font-weight: 300; 
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #666; 
+  background: #ddd; 
+  overflow: hidden;}
+  
+.insidebar li a:hover, 
+.uniForm .buttons input:hover,  
+a.more-link:focus,  
+a.more-link:hover 
+  { 
+  opacity:1;
+  border: 1px solid #BBB; 
+  background: #a4b7d7; 
+  background-image: -webkit-linear-gradient(top, #c9e4b1, #f1f1f1); 
+  background-image: -moz-linear-gradient(top, #c9e4b1, #f1f1f1); 
+  background-image: -ms-linear-gradient(top, #c9e4b1, #f1f1f1); 
+  background-image: -o-linear-gradient(top, #c9e4b1, #f1f1f1); 
+  background-image: linear-gradient(top, #c9e4b1, #f1f1f1); }
+
+
+.uniForm textarea,  
+.uniForm .fileupload,  
+.uniForm .textinput,  
+.uniForm .selectinput 
+  {
+  opacity:1;
+  text-align:left;
+  background: #FFF; 
+  background-image: -webkit-linear-gradient(top, #FFF, #f1f1f1); 
+  background-image: -moz-linear-gradient(top, #FFF, #f1f1f1); 
+  background-image: -ms-linear-gradient(top, #FFF, #f1f1f1); 
+  background-image: -o-linear-gradient(top, #FFF, #f1f1f1); 
+  background-image: linear-gradient(top, #FFF, #f1f1f1); }
