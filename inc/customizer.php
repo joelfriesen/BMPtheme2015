@@ -393,6 +393,24 @@ function bmp_customize_register( $wp_customize ) {
 		)
 	);
 
+	//pager
+	$wp_customize->add_setting(
+		'sliderpager',
+		array(
+			'sanitize_callback' => 'bmp_sanitize_checkbox',
+		)		
+	);
+	$wp_customize->add_control(
+		'sliderpager',
+		array(
+			'type' => 'checkbox',
+			'label' => __('Show the number of slides as dots', 'bmp'),
+			'section' => 'bmp_slider',
+		)
+	);
+
+	
+
 	// //Category
 	// $wp_customize->add_setting( 'slider_cat', array(
 	// 	'default'        => '',

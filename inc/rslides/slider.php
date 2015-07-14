@@ -26,12 +26,18 @@
 				$slidernav = 'true';
 			} else {
 				$slidernav = 'false';
+			}	
+			if ( get_theme_mod('sliderpager') ) {
+				$sliderpager = 'true';
+			} else {
+				$sliderpager = 'false';
 			}		
 			$slider_options = array(
 				'speed' => $slideshowspeed,
 				'timeout' => $animationspeed,
 				'random' => $sliderrandom,
 				'nav' => $slidernav,
+				'pager' => $sliderpager,
 			);			
 
 			// $reshuffled_data = array(
