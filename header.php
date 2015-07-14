@@ -51,18 +51,10 @@
       <?php dynamic_sidebar('topbar') ?>
     </div>
   </div>
-<<<<<<< HEAD
+
 
   <div class="navarea container col4">
        <nav class="menubar main-nav col span4" id="main-nav">
-=======
-  <div class="navarea cropped container fourcol">
-    <div class="col bodybackgroundcolour rowholder">
-      &nbsp;
-    </div>
-    <div class="col spanthree rowholder">
-      <nav class="menubar main-nav" id="main-nav">
->>>>>>> origin/Custom-post,-no-plugin
         <?php wp_nav_menu(array('theme_location' => 'primary-menu'));?>
       </nav>
 
