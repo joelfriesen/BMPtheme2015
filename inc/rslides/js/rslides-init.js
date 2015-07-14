@@ -3,9 +3,9 @@ jQuery(function ($) {
 
         speed: +sliderOptions.speed,
         timeout: +sliderOptions.timeout,
-        random: +sliderOptions.sliderrandom,
-        nav: +sliderOptions.slidernav,
-        pager: +sliderOptions.sliderpager,
+        random: +sliderOptions.random,
+        nav: +sliderOptions.nav,
+        pager: +sliderOptions.pager,
 
     auto: true,             // Boolean: Animate automatically, true or false
     pause: false,           // Boolean: Pause on hover, true or false
