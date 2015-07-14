@@ -30,26 +30,30 @@
   <?php if ( has_nav_menu( 'secondary-menu' ) ) : ?>
     <input type="checkbox" class="main-nav-check" id="main-nav-check" /> 
     <label for="main-nav-check" class="toggle-menu">Navigation</label>
-
     <nav class="menubar mobile-nav" id="mobile-nav">
       <?php wp_nav_menu(array( 'theme_location' => 'secondary-menu', 'container_class' => 'container' ) );?>
     </nav> 
-  <?php endif; ?> 
+  <?php endif; ?>
 
-  <div class="topbar container col4">
-    <div class="col span1">
-      <?php if ( get_theme_mod('site_logo') ) : ?>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php bloginfo('name'); ?>" /></a>
-        <?php else : ?>
-          <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-        <?php endif; ?>
+  <div class="topbar container col4"> 
+  <?php if ( get_theme_mod('description_display') ) : ?>
+  <div class="col span1">
+  <?php else : ?>
+  <div class="col span4">
+  <?php endif; ?>
+   
+  <?php if ( get_theme_mod('site_logo') ) : ?>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php bloginfo('name'); ?>" /></a>
+  <?php else : ?>
+    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+  <?php endif; ?>
+  
     </div>
-    <div class="col span2">
+    <?php if ( get_theme_mod('description_display') ) : ?>
+    <div class="col span3">
       <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
     </div>
-    <div class="col topserach">
-      <?php dynamic_sidebar('topbar') ?>
-    </div>
+    <?php endif; ?>
   </div>
 
 
