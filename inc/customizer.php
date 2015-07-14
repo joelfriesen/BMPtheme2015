@@ -337,7 +337,7 @@ function bmp_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'slideshowspeed',
 		array(
-			'label' => __('Speed of the transition, in milliseconds.', 'bmp'),
+			'label' => __('Speed of the transition, in milliseconds. (Note that the transition speed can\'t be larger than 3/4 of the animation speed)', 'bmp'),
 			'section' => 'bmp_slider',
 			'type' => 'text',
 		)
@@ -360,6 +360,22 @@ function bmp_customize_register( $wp_customize ) {
 			'type' => 'text',
 		)
 	);	
+
+	//Auto start
+	$wp_customize->add_setting(
+		'sliderauotstart',
+		array(
+			'sanitize_callback' => 'bmp_sanitize_checkbox',
+		)		
+	);
+	$wp_customize->add_control(
+		'sliderauotstart',
+		array(
+			'type' => 'checkbox',
+			'label' => __('Animate automatically', 'bmp'),
+			'section' => 'bmp_slider',
+		)
+	);
 
 	//Random
 	$wp_customize->add_setting(
@@ -408,6 +424,7 @@ function bmp_customize_register( $wp_customize ) {
 			'section' => 'bmp_slider',
 		)
 	);
+
 
 	
 

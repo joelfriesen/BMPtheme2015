@@ -6,8 +6,8 @@ jQuery(function ($) {
         random: +sliderOptions.random,
         nav: +sliderOptions.nav,
         pager: +sliderOptions.pager,
+        auto: +sliderOptions.auto,
 
-    auto: true,             // Boolean: Animate automatically, true or false
     pause: false,           // Boolean: Pause on hover, true or false
     pauseControls: true,    // Boolean: Pause when hovering controls, true or false
     prevText: "Previous",   // String: Text for the "previous" button

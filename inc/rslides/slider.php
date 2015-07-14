@@ -32,13 +32,19 @@
 			} else {
 				$sliderpager = false;
 			}		
+			if ( get_theme_mod('sliderauotstart') ) {
+				$sliderauotstart = true;
+			} else {
+				$sliderauotstart = false;
+			}		
 			$slider_options = array(
 				'speed' => $slideshowspeed,
 				'timeout' => $animationspeed,
 				'random' => $sliderrandom,
 				'nav' => $slidernav,
 				'pager' => $sliderpager,
-			);			
+				'auto' => $sliderauotstart,
+				);			
 
 			// $reshuffled_data = array(
 			//     'l10n_print_after' => 'sliderOptions = ' . json_encode( $slider_options )
