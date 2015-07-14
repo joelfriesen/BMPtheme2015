@@ -17,16 +17,21 @@
 			} else {
 				$animationspeed = absint(get_theme_mod('animationspeed'));
 			}	
-			if ( ! get_theme_mod('sliderandom') ) {
-				$sliderandom = false;
+			if ( get_theme_mod('sliderrandom') ) {
+				$sliderrandom = 'true';
 			} else {
-				$sliderandom = true;
+				$sliderrandom = 'false';
 			}		
 			$slider_options = array(
 				'speed' => $slideshowspeed,
 				'timeout' => $animationspeed,
-				'random' => $sliderandom,
+				'random' => $sliderrandom,
 			);			
+
+			// $reshuffled_data = array(
+			//     'l10n_print_after' => 'sliderOptions = ' . json_encode( $slider_options )
+			// );
+
 			wp_localize_script('slider-init', 'sliderOptions', $slider_options);			
 		}		
 	}

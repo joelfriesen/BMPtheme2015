@@ -361,7 +361,7 @@ function bmp_customize_register( $wp_customize ) {
 		)
 	);	
 
-	//Ransom
+	//Random
 	$wp_customize->add_setting(
 		'sliderrandom',
 		array(
@@ -377,6 +377,8 @@ function bmp_customize_register( $wp_customize ) {
 		)
 	);
 	
+
+
 	// //Category
 	// $wp_customize->add_setting( 'slider_cat', array(
 	// 	'default'        => '',
