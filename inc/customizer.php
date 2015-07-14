@@ -79,6 +79,23 @@ function bmp_customize_register( $wp_customize ) {
             )
         )
     );
+
+    //Description Display
+	$wp_customize->add_setting(
+		'description_display',
+		array(
+			'sanitize_callback' => 'bmp_sanitize_checkbox',
+		)		
+	);
+	$wp_customize->add_control(
+		'description_display',
+		array(
+			'type' => 'checkbox',
+			'label' => __('Check this box to display the site description.', 'bmp'),
+			'section' => 'bmp_general',
+		)
+	);
+
 	// $wp_customize->add_setting(
 	// 	'bmp_scroller',
 	// 	array(
