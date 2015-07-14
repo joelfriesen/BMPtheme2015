@@ -3,6 +3,7 @@ jQuery(function ($) {
 
         speed: +sliderOptions.speed,
         timeout: +sliderOptions.timeout,
+        random: +sliderOptions.sliderrandom,
 
     auto: true,             // Boolean: Animate automatically, true or false
     pager: false,           // Boolean: Show pager, true or false

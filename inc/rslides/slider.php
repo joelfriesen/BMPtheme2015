@@ -16,10 +16,16 @@
 				$animationspeed = 4000;
 			} else {
 				$animationspeed = absint(get_theme_mod('animationspeed'));
-			}			
+			}	
+			if ( ! get_theme_mod('sliderandom') ) {
+				$sliderandom = false;
+			} else {
+				$sliderandom = true;
+			}		
 			$slider_options = array(
 				'speed' => $slideshowspeed,
 				'timeout' => $animationspeed,
+				'random' => $sliderandom,
 			);			
 			wp_localize_script('slider-init', 'sliderOptions', $slider_options);			
 		}		
