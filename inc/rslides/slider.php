@@ -22,10 +22,16 @@
 			} else {
 				$sliderrandom = 'false';
 			}		
+			if ( get_theme_mod('slidernav') ) {
+				$slidernav = 'true';
+			} else {
+				$slidernav = 'false';
+			}		
 			$slider_options = array(
 				'speed' => $slideshowspeed,
 				'timeout' => $animationspeed,
 				'random' => $sliderrandom,
+				'nav' => $slidernav,
 			);			
 
 			// $reshuffled_data = array(

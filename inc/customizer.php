@@ -377,7 +377,21 @@ function bmp_customize_register( $wp_customize ) {
 		)
 	);
 	
-
+	//Nav
+	$wp_customize->add_setting(
+		'slidernav',
+		array(
+			'sanitize_callback' => 'bmp_sanitize_checkbox',
+		)		
+	);
+	$wp_customize->add_control(
+		'slidernav',
+		array(
+			'type' => 'checkbox',
+			'label' => __('Navigation Buttons', 'bmp'),
+			'section' => 'bmp_slider',
+		)
+	);
 
 	// //Category
 	// $wp_customize->add_setting( 'slider_cat', array(

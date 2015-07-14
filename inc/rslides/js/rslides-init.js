@@ -4,10 +4,10 @@ jQuery(function ($) {
         speed: +sliderOptions.speed,
         timeout: +sliderOptions.timeout,
         random: +sliderOptions.sliderrandom,
+        nav: +sliderOptions.slidernav,
 
     auto: true,             // Boolean: Animate automatically, true or false
     pager: false,           // Boolean: Show pager, true or false
-    nav: false,             // Boolean: Show navigation, true or false
     pause: false,           // Boolean: Pause on hover, true or false
     pauseControls: true,    // Boolean: Pause when hovering controls, true or false
     prevText: "Previous",   // String: Text for the "previous" button
