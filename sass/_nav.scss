@@ -82,10 +82,13 @@ nav {}
           color:$nav_hover_color;
         }
         ul.sub-menu{ 
-          margin:  0 0 0 100%; 
-          width: 100%;  
-            top: 0;
+          margin:  -2.95em 0 0 20em; 
+          width: 100%; 
         }    
+      }
+      li.last-dropdown ul.sub-menu ul.sub-menu{ 
+        margin:  -2.95em 0 0 -20em; 
+        width: 100%; 
       }    
     }
   }

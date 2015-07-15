@@ -626,12 +626,32 @@ remove_action('wp_print_styles', 'print_emoji_styles' );
 // ======================================================= 
 // Adds class to the first and last main menu item
 // =======================================================
-function wpb_first_and_last_menu_class($items) {
-    $items[1]->classes[] = 'first';
-    $items[count($items)]->classes[] = 'last';
-    return $items;
+
+//Add some drowdown hinting
+function menu_set_dropdown( $sorted_menu_items, $args ) {
+    $last_top = 0;
+    foreach ( $sorted_menu_items as $key => $obj ) {
+        // it is a top lv item?
+        if ( 0 == $obj->menu_item_parent ) {
+            // set the key of the parent
+            $last_top = $key;
+        } else {
+            $sorted_menu_items[$last_top]->classes['menu-dropdown'] = 'menu-dropdown';
+        }
+    }
+    return $sorted_menu_items;
 }
-add_filter('wp_nav_menu_objects', 'wpb_first_and_last_menu_class');
+add_filter( 'wp_nav_menu_objects', 'menu_set_dropdown', 10, 2 );
+
+//find the last dropdown and give it a class of last
+function add_first_and_last($output) {
+  $output = preg_replace('/class="menu-item/', 'class="first-menu-item menu-item', $output, 1);
+  $output = substr_replace($output, 'class="last-menu-item menu-item', strripos($output, 'class="menu-item'), strlen('class="menu-item'));
+  $output = substr_replace($output, 'last-dropdown menu-dropdown', strripos($output, 'menu-dropdown'), strlen('menu-dropdown'));
+  
+  return $output;
+}
+add_filter('wp_nav_menu', 'add_first_and_last');
 
 // ======================================================= 
 // Remove inline width from images
