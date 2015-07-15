@@ -176,6 +176,7 @@ function bmp_scripts() {
     wp_enqueue_script( 'bmp-fancybox-2', get_template_directory_uri() . '/js/fancybox/jquery.mousewheel-3.0.4.pack.js', array('jquery'), '', true  );
     wp_enqueue_script( 'bmp-fancybox-3', get_template_directory_uri() . '/js/fancybox/jquery.fancybox-1.3.4.pack.js', array('jquery'), '', true  );
     wp_enqueue_script( 'bmp-fancybox-4', get_template_directory_uri() . '/js/fancysettings.js', array('jquery'), '', true );
+    wp_enqueue_script( 'bmp-flexvideo', get_template_directory_uri() . '/js/flexvideo.js', array('jquery'), '', true   );
     wp_enqueue_script( 'bmp-analytics', get_template_directory_uri() . '/js/analytics.js', array(), '', true  );
 
 
