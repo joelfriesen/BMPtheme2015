@@ -178,18 +178,17 @@ _________ _______  _______  _
                         width: $teenwidth;
                         .wp-caption {
                             max-width:  $teenwidth + 10%; 
-                            width:auto !important;
+                            width:100% !important;
+                            padding: 10px 0;
 
                         }
                         img {
                             max-width:  $teenwidth + 10%; 
-                            width:auto !important;
                             height:auto
                             }
                         .wp-caption img {
                             max-width:  $teenwidth - 2% ; 
-                            width:auto !important;
-                        }
+                            width:  $teenwidth - 2% !important;                        }
                     }
                 }
             }
