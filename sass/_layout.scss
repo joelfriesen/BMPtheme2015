@@ -54,7 +54,7 @@ $margin_width:$master_margin_width;
 $fullcontainer_width:$papawidth;
 
     .container                      { width: $fullcontainer_width; margin: 0 auto; padding: 0; overflow: hidden; border:1px solid #dee }
-    .container .col                 { float: left; margin: 0 0 0 $margin_width; border:1px solid #eed }
+    .container .col                 { float: left; margin: 0 0 ($margin_width/2) $margin_width; border:1px solid #eed }
     .container .nomargin,           
     .container .rowholder           { margin:0;}
     .container .rowholder .col:first-child           { margin:0 !important;}
@@ -103,7 +103,7 @@ $fullcontainer_width:$papawidth;
     $margin_width:($master_margin_width * ($mamawidth/$papawidth));    
 
     .container                      { width: $fullcontainer_width; margin: 0 auto; padding: 0; overflow: hidden;}
-    .container .col                 { float: left; margin: 0 0 $margin_width $margin_width;}
+    .container .col                 { float: left; margin: 0 0 ($margin_width/2) $margin_width;}
     .container .nomargin,            
     .container .rowholder           { margin:0;}
     .container .rowholder .col:first-child           { margin:0 !important;}
