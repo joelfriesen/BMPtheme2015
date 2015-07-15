@@ -634,10 +634,41 @@ function wpb_first_and_last_menu_class($items) {
 add_filter('wp_nav_menu_objects', 'wpb_first_and_last_menu_class');
 
 // ======================================================= 
+// Remove inline width from images
+// =======================================================
+
+add_shortcode( 'wp_caption', 'fixed_img_caption_shortcode' );
+add_shortcode( 'caption', 'fixed_img_caption_shortcode' );
+
+function fixed_img_caption_shortcode($attr, $content = null) {
+     if ( ! isset( $attr['caption'] ) ) {
+         if ( preg_match( '#((?:<a [^>]+>s*)?<img [^>]+>(?:s*</a>)?)(.*)#is', $content, $matches ) ) {
+         $content = $matches[1];
+         $attr['caption'] = trim( $matches[2] );
+         }
+     }
+     $output = apply_filters( 'img_caption_shortcode', '', $attr, $content );
+         if ( $output != '' )
+         return $output;
+     extract( shortcode_atts(array(
+     'id'      => '',
+     'align'   => 'alignnone',
+     'width'   => '',
+     'caption' => ''
+     ), $attr));
+     if ( 1 > (int) $width || empty($caption) )
+     return $content;
+     if ( $id ) $id = 'id="' . esc_attr($id) . '" ';
+     return '<div ' . $id . 'class="wp-caption ' . esc_attr($align) . '" >'
+     . do_shortcode( $content ) . '<p class="wp-caption-text">' . $caption . '</p></div>';
+}
+
+// ======================================================= 
 // Customizer additions.
 // =======================================================
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/styles.php';
 require get_template_directory() . '/inc/rslides/slider.php';
+
 
 ?>

@@ -484,21 +484,7 @@ function bmp_customize_register( $wp_customize ) {
 			'section' => 'bmp_singles',
 		)
 	);
-	//Pages
-	$wp_customize->add_setting(
-		'bmp_page_img',
-		array(
-			'sanitize_callback' => 'bmp_sanitize_checkbox',
-		)
-	);
-	$wp_customize->add_control(
-		'bmp_page_img',
-		array(
-			'type' => 'checkbox',
-			'label' => __('Check this box to show featured images on pages', 'bmp'),
-			'section' => 'bmp_singles',
-		)
-	);
+
 	//Author bio
 	$wp_customize->add_setting(
 		'author_bio',

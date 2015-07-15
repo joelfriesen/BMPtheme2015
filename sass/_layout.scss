@@ -68,13 +68,10 @@ $fullcontainer_width:$papawidth;
                 &.span#{$i} {
                     width: ($colwidth*$i)+($margin_width*($i - 1));
                     .wp-caption {
-                        max-width:  ($colwidth*$i)+($margin_width*($i - 1)); 
-                        width:auto !important;
-
+                        max-width:  ($colwidth*$i)+($margin_width*($i - 1));
                     }
                     img {
                         max-width:  ($colwidth*$i)+($margin_width*($i - 1)); 
-                        width:auto !important;
                         height:auto
                         }
                     ol.commentlist li img{
@@ -82,7 +79,6 @@ $fullcontainer_width:$papawidth;
                         }                    
                     .wp-caption img {
                         max-width:  ($colwidth*$i)+($margin_width*($i - 1)) - 50px ; 
-                        width:auto !important;
                     }
                 }
             } 
@@ -122,12 +118,9 @@ $fullcontainer_width:$papawidth;
                     width: ($colwidth*$i)+($margin_width*($i - 1));
                         .wp-caption {
                             max-width:  ($colwidth*$i)+($margin_width*($i - 1)); 
-                            width:auto !important;
-
                         }
                         img {
                             max-width:  ($colwidth*$i)+($margin_width*($i - 1)); 
-                            width:auto !important;
                             height:auto
                             }
                         ol.commentlist li img{
@@ -135,15 +128,11 @@ $fullcontainer_width:$papawidth;
                             }
                         .wp-caption img {
                             max-width:  ($colwidth*$i)+($margin_width*($i - 1)) - 50px ; 
-                            width:auto !important;
                         }
                     }
                 }
             }
         }
-    }
-    .wp-caption {
-    width:  (($fullcontainer_width/$number_of_columns)-($margin_width)*1.5) !important;
     }
 }
 /* #Tablet (Portrait)
