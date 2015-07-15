@@ -79,7 +79,7 @@ function bmp_slider_template() {
 				if ( get_theme_mod('slider_text1') && get_theme_mod('slider_image1') ) {
 					$slider_text1 = get_theme_mod('slider_text1'); ?>
 					<li class="slide1">
-						<div><?php echo $slider_text1; ?></div>
+						<div class="slidetext"><?php echo $slider_text1; ?></div>
 					</li>
 				<?php }	?>
 
@@ -96,7 +96,7 @@ function bmp_slider_template() {
 				if ( get_theme_mod('slider_text2') && get_theme_mod('slider_image2') ) {
 					$slider_text2 = get_theme_mod('slider_text2'); ?>
 					<li class="slide2">
-						<div><?php echo $slider_text2; ?></div>
+						<div class="slidetext"><?php echo $slider_text2; ?></div>
 					</li>
 				<?php }	?>
 
@@ -113,7 +113,7 @@ function bmp_slider_template() {
 				if ( get_theme_mod('slider_text3') && get_theme_mod('slider_image3') ) {
 					$slider_text3 = get_theme_mod('slider_text3'); ?>
 					<li class="slide3">
-						<div><?php echo $slider_text3; ?></div>
+						<div class="slidetext"><?php echo $slider_text3; ?></div>
 					</li>
 				<?php }	?>
 
@@ -130,7 +130,7 @@ function bmp_slider_template() {
 				if ( get_theme_mod('slider_text4') && get_theme_mod('slider_image4') ) {
 					$slider_text4 = get_theme_mod('slider_text4'); ?>
 					<li class="slide4">
-						<div><?php echo $slider_text4; ?></div>
+						<div class="slidetext"><?php echo $slider_text4; ?></div>
 					</li>
 				<?php }	?>
 

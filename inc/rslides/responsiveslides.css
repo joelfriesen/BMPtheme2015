@@ -160,3 +160,54 @@
     background: #222;
     background: rgba(0, 0, 0, 0.8);
 }
+
+/*Animated text*/
+
+.rslides_container .slidetext{
+  position: absolute;
+top: 45px;
+left: 56px;
+color:#fff;
+font-size: 5em;
+filter:
+  progid:DXImageTransform.Microsoft.Shadow(Color=black, Direction=135, Strength=2)
+  progid:DXImageTransform.Microsoft.Wheel(duration=3)
+  ;
+text-shadow:    
+  -2px -2px 8px #000,
+    2px -2px 8px #000,
+    -2px 2px 8px #000,
+    2px 2px 8px #000,  
+    2px 2px 8px #000;
+margin: 0;
+line-height: 0.8em;
+animation:slow 15s;
+-moz-animation:slow 15s; /* Firefox */
+-webkit-animation:slow 15s; /* Safari and Chrome */
+-o-animation:slow 15s; /* Opera */
+}
+
+@keyframes slow
+{
+0%   {left:56px; }
+100% {left:96px;}
+
+}
+
+@-moz-keyframes slow /* Firefox */
+{
+0%   {left:56px; }
+100% {left:96px;}
+}
+
+@-webkit-keyframes slow /* Safari and Chrome */
+{
+0%   {left:56px; }
+100% {left:96px;}
+}
+
+@-o-keyframes slow /* Opera */
+{
+0%   {left:56px; }
+100% {left:96px;}
+}
