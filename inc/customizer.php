@@ -80,6 +80,22 @@ function bmp_customize_register( $wp_customize ) {
         )
     );
 
+    //Title Display
+	$wp_customize->add_setting(
+		'title_display',
+		array(
+			'sanitize_callback' => 'bmp_sanitize_checkbox',
+		)		
+	);
+	$wp_customize->add_control(
+		'title_display',
+		array(
+			'type' => 'checkbox',
+			'label' => __('Check this box to display the site title.', 'bmp'),
+			'section' => 'bmp_general',
+		)
+	);
+
     //Description Display
 	$wp_customize->add_setting(
 		'description_display',
@@ -95,7 +111,6 @@ function bmp_customize_register( $wp_customize ) {
 			'section' => 'bmp_general',
 		)
 	);
-
 	// $wp_customize->add_setting(
 	// 	'bmp_scroller',
 	// 	array(
