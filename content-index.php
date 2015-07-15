@@ -23,8 +23,13 @@
               </div>
             </div>
             <?php endif; ?> 	
-	<?php print_excerpt(5000); ?>
-    <a href="<?php the_permalink(); ?>" class="more-link">More</a>
+            <?php if ( ! has_excerpt() ) : 
+             the_content(); 
+              else : 
+             print_excerpt(5000); ?>
+         	<a href="<?php the_permalink(); ?>" class="more-link">More</a>
+            <?php endif; ?>
+    
 	<?php
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . __( 'Pages:', 'bmp' ),
