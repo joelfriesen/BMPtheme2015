@@ -77,6 +77,8 @@ ol.commentlist li {
 	list-style-type: none;
 }
 
+ol.commentlist ul li{list-style-type: inherit;
+}
 ol.commentlist li.pingback comment-author {
 	padding: 0 170px 0 0;
 }
@@ -126,11 +128,11 @@ ol.commentlist li div.comment-meta a {
 
 ol.commentlist li p {}
 
-ol.commentlist li ul {
-	list-style: square;
-	margin: 0 0 12px;
-	padding: 0;
-}
+// ol.commentlist li ul {
+// 	list-style: square;
+// 	margin: 0 0 12px;
+// 	padding: 0;
+// }
 
 ol.commentlist li div.reply {
 	margin: 1em 0 0 0;
@@ -199,6 +201,11 @@ a#cancel-comment-reply-link:hover {
 	text-decoration: none;
 }
 
+ol.commentlist .comment-content li{
+	border: none;
+	padding: inherit;
+	list-style-type: inherit;
+}
   /* Galleries and Albumsalleries
 ====================================================================================================*/
 .photogallery {

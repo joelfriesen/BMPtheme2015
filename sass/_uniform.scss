@@ -30,6 +30,7 @@ form .selectinput{
 	vertical-align: top;
 	float:right;
 	width: 100%;
+	box-sizing: border-box;
 }
 .spanthree{
 	form textarea, 
@@ -108,6 +109,7 @@ a.more-link,
 		color:black;
 	}
 }
+a.more-link{clear:both}
 form input[type="submit"]{
 width:100%;
 }

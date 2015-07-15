@@ -53,8 +53,8 @@ e.g.  <div class="col spanthree">...</div>
 $margin_width:$master_margin_width;
 $fullcontainer_width:$papawidth;
 
-    .container                      { width: $fullcontainer_width; margin: 0 auto; padding: 0; overflow: hidden;}
-    .container .col                 { float: left; margin: 0 0 0 $margin_width; }
+    .container                      { width: $fullcontainer_width; margin: 0 auto; padding: 0; overflow: hidden; border:1px solid #dee }
+    .container .col                 { float: left; margin: 0 0 0 $margin_width; border:1px solid #eed }
     .container .nomargin,           
     .container .rowholder           { margin:0;}
     .container .rowholder .col:first-child           { margin:0 !important;}
@@ -77,6 +77,9 @@ $fullcontainer_width:$papawidth;
                         width:auto !important;
                         height:auto
                         }
+                    ol.commentlist li img{
+                         max-width:100%;
+                        }                    
                     .wp-caption img {
                         max-width:  ($colwidth*$i)+($margin_width*($i - 1)) - 50px ; 
                         width:auto !important;
@@ -126,6 +129,9 @@ $fullcontainer_width:$papawidth;
                             max-width:  ($colwidth*$i)+($margin_width*($i - 1)); 
                             width:auto !important;
                             height:auto
+                            }
+                        ol.commentlist li img{
+                             max-width:100%;
                             }
                         .wp-caption img {
                             max-width:  ($colwidth*$i)+($margin_width*($i - 1)) - 50px ; 
