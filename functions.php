@@ -202,7 +202,9 @@ add_action( 'wp_head', 'bmp_html5shiv' );
 // =======================================================
 // Login Script and logo change
 // ======================================================= 
-function my_login_logo() { ?>
+
+//styles
+function new_login_styles() { ?>
     <style type="text/css">
         body.login {background:#fff;}
         body.login div#login h1 a {
@@ -214,26 +216,21 @@ function my_login_logo() { ?>
         }
     </style>
 <?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
-function my_login_logo_url() {
-    return get_bloginfo( 'url' );
+add_action('login_head','new_login_styles');
+
+//Establish home url and apply to logo and login redirect
+function new_login_url() {
+    return home_url( '/' );
 }
-add_filter( 'login_headerurl', 'my_login_logo_url' );
+add_filter('login_headerurl', 'new_login_url'); 
+add_filter('login_redirect', 'new_login_url'); 
 
-function my_login_logo_url_title() {
-    return 'Your Site Name and Info';
+//Title the page with the name of the blog
+function new_login_title() {
+    return get_option('blogname');
 }
-add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+add_filter('login_headertitle', 'new_login_title');
 
-
-// =======================================================
-// Login redirects to front page, not dashboard
-// ======================================================= 
-function admin_default_page() {
-  return '/';
-}
-
-add_filter('login_redirect', 'admin_default_page');
 
 
 // =======================================================
