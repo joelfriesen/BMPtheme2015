@@ -49,43 +49,43 @@ e.g.  <div class="col spanthree">...</div>
 |/       |/     \||/       |/     \|
  
 */
- 
-$margin_width:$master_margin_width;
-$fullcontainer_width:$papawidth;
+@media only screen and (min-width: $mamabreak){
+    $margin_width:$master_margin_width;
+    $fullcontainer_width:$papawidth;
 
-    .container                      { width: $fullcontainer_width; margin: 0 auto; padding: 0; overflow: hidden; border:1px solid #dee }
-    .container .col                 { float: left; margin: 0 0 ($margin_width/2) $margin_width; border:1px solid #eed }
-    .container .nomargin,           
-    .container .rowholder           { margin:0;}
-    .container .rowholder .col:first-child           { margin:0 !important;}
+        .container                      { width: $fullcontainer_width; margin: 0 auto; padding: 0; overflow: hidden; }
+        .container .col                 { float: left; margin: 0 0 ($margin_width/2)  $margin_width;}
+        .container .nomargin,           
+        .container .rowholder           { margin:0;}
+        .container .rowholder .col:first-child           { margin:0 !important;}
 
 
-@for $i from 1 through $number_of_columns {
-    $colwidth: ($fullcontainer_width/$i)-($margin_width*(($i+1)/$i));
-    .col#{$i} { 
-        .col {width: $colwidth;
-            @for $i from 2 through $i {
-                &.span#{$i} {
-                    width: ($colwidth*$i)+($margin_width*($i - 1));
-                    .wp-caption {
-                        max-width:  ($colwidth*$i)+($margin_width*($i - 1));
-                    }
-                    img {
-                        max-width:  ($colwidth*$i)+($margin_width*($i - 1)); 
-                        height:auto
+    @for $i from 1 through $number_of_columns {
+        $colwidth: ($fullcontainer_width/$i)-($margin_width*(($i+1)/$i));
+        .col#{$i} { 
+            .col {width: $colwidth;
+                @for $i from 2 through $i {
+                    &.span#{$i} {
+                        width: ($colwidth*$i)+($margin_width*($i - 1));
+                        .wp-caption {
+                            max-width:  ($colwidth*$i)+($margin_width*($i - 1));
                         }
-                    ol.commentlist li img{
-                         max-width:100%;
-                        }                    
-                    .wp-caption img {
-                        max-width:  ($colwidth*$i)+($margin_width*($i - 1)) - 50px ; 
+                        img {
+                            max-width:  ($colwidth*$i)+($margin_width*($i - 1)); 
+                            height:auto
+                            }
+                        ol.commentlist li img{
+                             max-width:100%;
+                            }                    
+                        .wp-caption img {
+                            max-width:  ($colwidth*$i)+($margin_width*($i - 1)) - 50px ; 
+                        }
                     }
-                }
-            } 
+                } 
+            }
         }
     }
 }
-
 /*
  _______  _______  _______  _______ 
 (       )(  ___  )(       )(  ___  )
