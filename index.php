@@ -13,6 +13,9 @@ get_header(); ?>
       <?php while ( have_posts() ) : the_post(); ?>
         <?php get_template_part( 'content', 'index' ); ?>
       <?php endwhile; // end of the loop. ?>
+      <div class="pagination"> 
+        <?php kriesi_pagination(); ?> 
+      </div>
     </div>
     <div class="col subcol">
       <?php dynamic_sidebar('frontpage') ?>
