@@ -1,0 +1,497 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: crayon\n"
+"POT-Creation-Date: 2014-06-01 16:08+0200\n"
+"PO-Revision-Date: 2014-06-01 16:08+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-SearchPath-0: C:\\Users\\Vlad\\Desktop\\athemes\n"
+
+#: C:\Users\Vlad\Desktop\athemes/404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/404.php:27
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: C:\Users\Vlad\Desktop\athemes/404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:33
+msgid "F Y"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:36
+msgid "Y"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:39
+msgid "Asides"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:42
+msgid "Galleries"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:45
+msgid "Images"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:48
+msgid "Videos"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:51
+msgid "Quotes"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:54
+msgid "Links"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:57
+msgid "Statuses"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:60
+msgid "Audios"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:63
+msgid "Chats"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/archive.php:66
+#: C:\Users\Vlad\Desktop\athemes/sidebar.php:16
+msgid "Archives"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/author-bio.php:37
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/author-bio.php:44
+#, php-format
+msgid "See all posts by %s"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/comments.php:35
+#: C:\Users\Vlad\Desktop\athemes/comments.php:53
+msgid "Comment navigation"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/comments.php:36
+#: C:\Users\Vlad\Desktop\athemes/comments.php:54
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/comments.php:37
+#: C:\Users\Vlad\Desktop\athemes/comments.php:55
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/comments.php:65
+msgid "Comments are closed."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/content-page.php:25
+#: C:\Users\Vlad\Desktop\athemes/content-single.php:27
+msgid "Pages:"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/content-page.php:30
+#: C:\Users\Vlad\Desktop\athemes/content-single.php:67
+#: C:\Users\Vlad\Desktop\athemes/content.php:47
+msgid "Edit"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: C:\Users\Vlad\Desktop\athemes/content-single.php:36
+#: C:\Users\Vlad\Desktop\athemes/content-single.php:39
+#: C:\Users\Vlad\Desktop\athemes/content.php:25
+#: C:\Users\Vlad\Desktop\athemes/content.php:34
+msgid ", "
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/content-single.php:44
+#, php-format
+msgid "<a href=\"%3$s\" rel=\"bookmark\"> permalink</a>."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/content-single.php:46
+#: C:\Users\Vlad\Desktop\athemes/content-single.php:52
+#: C:\Users\Vlad\Desktop\athemes/content-single.php:54
+#, php-format
+msgid "<a href=\"%3$s\" rel=\"bookmark\"> permalink</a>"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/content.php:44
+msgid "Leave a comment"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/content.php:44
+msgid "1 Comment"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/content.php:44
+msgid "% Comments"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/footer.php:17
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/footer.php:17
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/footer.php:19
+#, php-format
+msgid "Theme: %2$s by %1$s."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/functions.php:48
+msgid "Primary Menu"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/functions.php:49
+msgid "Social"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/functions.php:80
+msgid "Sidebar"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/functions.php:89
+msgid "Footer A"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/functions.php:97
+msgid "Footer B"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/functions.php:105
+msgid "Footer C"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/functions.php:175
+msgid "Author Bio: Facebook"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/functions.php:176
+msgid "Author Bio: Twitter"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/functions.php:177
+msgid "Author Bio: Google Plus"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/functions.php:178
+msgid "Author Bio: Linkedin"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/header.php:27
+msgid "Skip to content"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/sidebar.php:23
+msgid "Meta"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:20
+#: C:\Users\Vlad\Desktop\athemes/widgets/social-profile.php:68
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:40
+msgid "General"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:56
+msgid "Upload your logo"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:75
+msgid "Upload your favicon"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:94
+msgid "Layout"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:106
+msgid "Fonts"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:145
+msgid "Select your desired font for the headings."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:162
+msgid "Select your desired font for the body."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:171
+msgid "Slider"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:186
+msgid "Check this box to display the slider."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:198
+msgid "Select which category to show in the slider"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:215
+msgid "Enter the number of posts you want to show in the slider."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:232
+msgid "Enter your desired slideshow speed, in miliseconds."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:249
+msgid "Enter your desired animation speed, in miliseconds."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:259
+msgid "Single posts/pages"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:274
+msgid "Check this box to show featured images on single posts"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:289
+msgid "Check this box to show featured images on pages"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:304
+msgid ""
+"Check this box to display the author bio on single posts. You can add your "
+"author bio and social links on the Users screen in the Your Profile section."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:323
+msgid "Primary color"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:344
+msgid "Secondary color"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:365
+msgid "Site title"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:386
+msgid "Site description"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:407
+msgid "Entry title"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/customizer.php:428
+msgid "Text"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/extras.php:63
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/template-tags.php:25
+msgid " Older posts"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/template-tags.php:29
+msgid "Newer posts "
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/template-tags.php:52
+msgid "Post navigation"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/template-tags.php:55
+msgid "<i class=\"fa fa-long-arrow-left\"></i> %title"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/template-tags.php:56
+msgid "%title <i class=\"fa fa-long-arrow-right\"></i>"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/inc/template-tags.php:81
+#, php-format
+msgid ""
+"<span class=\"posted-on\"><i class=\"fa fa-calendar\"></i> %1$s</span><span "
+"class=\"byline\"><i class=\"fa fa-user\"></i> %2$s</span>"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/recent-comments.php:6
+msgid "Display your site&#8217;s recent comments with avatars."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/recent-comments.php:7
+msgid "crayon: Recent Comments"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/recent-comments.php:62
+msgid "Recent Comments"
+msgstr ""
+
+#. translators: comments widget: 1: comment author, 2: post link
+#: C:\Users\Vlad\Desktop\athemes/widgets/recent-comments.php:97
+#, php-format
+msgid "%1$s on %2$s"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/recent-comments.php:130
+#: C:\Users\Vlad\Desktop\athemes/widgets/social-profile.php:61
+msgid "Title:"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/recent-comments.php:133
+msgid "Number of comments to show:"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/recent-posts.php:7
+msgid "Display your site&#8217;s recent posts with thumbnails."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/recent-posts.php:8
+msgid "crayon: Recent Posts"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/recent-posts.php:26
+#: C:\Users\Vlad\Desktop\athemes/widgets/video-widget.php:25
+msgid "Title"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/recent-posts.php:30
+msgid "Number of posts to show:"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/recent-posts.php:34
+msgid "Display post date?"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/recent-posts.php:81
+msgid "Recent Posts"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/social-profile.php:5
+msgid "Add your social profile."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/social-profile.php:6
+msgid "crayon: Social Profile"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/social-profile.php:56
+#, php-format
+msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/social-profile.php:64
+msgid ""
+"In order to display your social icons in a widget, all you need to do is go "
+"to <strong>Appearance > Menus</strong> and create a menu containing links to "
+"your social profiles, then assign that menu here. Supported networks: "
+"Facebook, Twitter, Google Plus, Instagram, Dribble, Vimeo, Linkedin, "
+"Youtube, Flickr, Pinterest"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/social-profile.php:66
+msgid "Select your social menu:"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/video-widget.php:7
+msgid "Display a video in your sidebar."
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/video-widget.php:8
+msgid "crayon: Video"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/video-widget.php:29
+msgid ""
+"Paste the URL of the video (only from a network that supports oEmbed, like "
+"Youtube, Vimeo etc.):"
+msgstr ""
+
+#: C:\Users\Vlad\Desktop\athemes/widgets/video-widget.php:76
+msgid "Video"
+msgstr ""

@@ -124,9 +124,9 @@
 }
 
 .rslides_tabs {
-    margin-top: 10px;
+    margin-top: 2px;
     text-align: center;
-    display: none;
+    clear:both;
 }
 
 .rslides_tabs li {

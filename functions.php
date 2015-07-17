@@ -19,14 +19,6 @@ function bmp_setup() {
     // Add default posts and comments RSS feed links to head.
     // =======================================================
     add_theme_support( 'automatic-feed-links' );
-
-    // =======================================================
-    // Set the content width based on the theme's design and stylesheet.
-    // =======================================================
-    global $content_width;
-    if ( ! isset( $content_width ) ) {
-        $content_width = 640; /* pixels */
-    }   
     
     // =======================================================
     // Add featured image support
@@ -229,8 +221,6 @@ function new_login_title() {
     return get_option('blogname');
 }
 add_filter('login_headertitle', 'new_login_title');
-
-
 
 // =======================================================
 // Change the [...] at the end of the excerpt

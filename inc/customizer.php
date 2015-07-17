@@ -237,7 +237,7 @@ function bmp_customize_register( $wp_customize ) {
     $wp_customize->add_section(
         'bmp_slider',
         array(
-            'title' => __('Slider', 'bmp'),
+            'title' => __('Slide Show', 'bmp'),
             'priority' => 12,
         )
     );
@@ -476,11 +476,11 @@ function bmp_customize_register( $wp_customize ) {
 
 
 	
-	//___Single posts___//
+	//___Layout___//
     $wp_customize->add_section(
         'bmp_singles',
         array(
-            'title' => __('Single posts/pages', 'bmp'),
+            'title' => __('Layout Options', 'bmp'),
             'priority' => 13,
         )
     );
