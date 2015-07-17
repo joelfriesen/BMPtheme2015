@@ -290,3 +290,11 @@ ol.commentlist .comment-content li{
 .excerpt span {
 	display: none;
 }
+
+body.custom-background {
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}

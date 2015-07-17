@@ -4,7 +4,21 @@
  */
 get_header(); ?>
   <div class="main container col4">
-    <div class="col span3 maincol">
+    <?php if ( get_theme_mod('right_col') &&  get_theme_mod('left_col') ) : ?>
+      <div class="col subcol">
+        <?php dynamic_sidebar('leftcol') ?>
+      </div>
+      <div class="col span2 maincol">
+      <?php elseif ( get_theme_mod('left_col') ) : ?>
+      <div class="col subcol">
+        <?php dynamic_sidebar('leftcol') ?>
+      </div>
+      <div class="col span3 maincol">
+    <?php elseif ( get_theme_mod('right_col') ) : ?>
+      <div class="col span3 maincol">
+    <?php else : ?>
+      <div class="col span4 maincol">
+    <?php endif; ?>
       <?php while ( have_posts() ) : the_post(); ?>
         <?php get_template_part( 'content', 'page' ); ?>
         <?php
@@ -15,11 +29,12 @@ get_header(); ?>
         ?>
       <?php endwhile; // end of the loop. ?>
     </div>
-    <div class="col subcol">
-      <?php dynamic_sidebar('insidepage') ?>
-      <?php if (is_user_logged_in()) { dynamic_sidebar('insidepageright2'); } ?>
-      <?php get_sidebar(); ?>
-    </div>
+    <?php if ( get_theme_mod('right_col') ) : ?>
+      <div class="col subcol">
+        <?php dynamic_sidebar('rightcol') ?>
+      </div>
+    <?php endif; ?>
+
   </div>
 
 <?php get_sidebar(); ?>

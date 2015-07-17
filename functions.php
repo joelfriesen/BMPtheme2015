@@ -42,7 +42,14 @@ function bmp_setup() {
     // Setup the WordPress core custom background feature.
     // =======================================================
     add_theme_support( 'custom-background', apply_filters( 'bmp_custom_background_args', array(
-        'default-color' => 'ffffff'
+    'default-color'          => 'ffffff',
+    'default-image'          => '',
+    'default-repeat'         => 'no-repeat',
+    'default-position-x'     => 'center',
+    'default-position-y'     => 'top',
+    'default-size'           => 'cover',
+    'default-attachment'     => 'scroll'
+
     ) ) );
 
     // =======================================================
@@ -64,9 +71,9 @@ add_action( 'after_setup_theme', 'bmp_setup' );
 // =======================================================
 function bmp_widgets_init() {
     register_sidebar(array(
-    'name' => __( 'Front page' ),
-    'id' => 'frontpage',
-    'description' => __( 'Right hand column, front page' ),
+    'name' => __( 'Right Column' ),
+    'id' => 'rightcol',
+    'description' => __( 'Right hand column' ),
     'before_widget' => '<div>',
     'after_widget' => '</div>',
     'before_title' => '<h3>',
@@ -74,54 +81,15 @@ function bmp_widgets_init() {
     ));
 
     register_sidebar(array(
-    'name' => __( 'Inside page' ),
-    'id' => 'insidepage',
-    'description' => __( 'Right hand column, inside page' ),
+    'name' => __( 'Left Column' ),
+    'id' => 'leftcol',
+    'description' => __( 'Left hand column' ),
     'before_widget' => '<div>',
     'after_widget' => '</div>',
     'before_title' => '<h3>',
     'after_title' => '</h3>',
     ));
 
-    register_sidebar(array(
-    'name' => __( 'Top bar' ),
-    'id' => 'topbar',
-    'description' => __( 'Found on the top of the site on every page, the top bar lives on the top right side of the header. Intended for search.' ),
-    'before_widget' => '',
-    'after_widget' => '',
-    'before_title' => '<h3>',
-    'after_title' => '</h3>',
-    ));
-
-    register_sidebar(array(
-    'name' => __( 'Under the Logo' ),
-    'id' => 'underlogo',
-    'description' => __( 'Left hand column, under the logo.' ),
-    'before_widget' => '<div>',
-    'after_widget' => '</div>',
-    'before_title' => '<h3>',
-    'after_title' => '</h3>',
-    ));
-
-    register_sidebar(array(
-    'name' => __( 'Under the logo - logged in' ),
-    'id' => 'insidepage2',
-    'description' => __( 'This will be displayed under the logo only if you are logged in.' ),
-    'before_widget' => '<div>',
-    'after_widget' => '</div>',
-    'before_title' => '<h3>',
-    'after_title' => '</h3>',
-    ));
-
-    register_sidebar(array(
-    'name' => __( 'Right hand side - logged in' ),
-    'id' => 'insidepageright2',
-    'description' => __( 'This will be displayed under the logo only if you are logged in.' ),
-    'before_widget' => '<div>',
-    'after_widget' => '</div>',
-    'before_title' => '<h3>',
-    'after_title' => '</h3>',
-    ));
 
     //Register the custom widgets
     register_widget( 'bmp_Recent_Posts' );

@@ -478,13 +478,13 @@ function bmp_customize_register( $wp_customize ) {
 	
 	//___Layout___//
     $wp_customize->add_section(
-        'bmp_singles',
+        'bmp_layout',
         array(
             'title' => __('Layout Options', 'bmp'),
             'priority' => 13,
         )
     );
-	//Single posts
+	//Single post feature images
 	$wp_customize->add_setting(
 		'bmp_post_img',
 		array(
@@ -496,26 +496,45 @@ function bmp_customize_register( $wp_customize ) {
 		array(
 			'type' => 'checkbox',
 			'label' => __('Check this box to show featured images on single posts', 'bmp'),
-			'section' => 'bmp_singles',
+			'section' => 'bmp_layout',
 		)
 	);
 
-	//Author bio
+	//Left column
 	$wp_customize->add_setting(
-		'author_bio',
+		'left_col',
 		array(
 			'sanitize_callback' => 'bmp_sanitize_checkbox',
 		)		
 	);
 	$wp_customize->add_control(
-		'author_bio',
+		'left_col',
 		array(
 			'type' => 'checkbox',
-			'label' => __('Check this box to display the author bio on single posts. You can add your author bio and social links on the Users screen in the Your Profile section.', 'bmp'),
-			'section' => 'bmp_singles',
+			'label' => __('Enable left column', 'bmp'),
+			'section' => 'bmp_layout',
 		)
 	);
-	//___Colors___//
+
+	//right column
+	$wp_customize->add_setting(
+		'right_col',
+		array(
+			'sanitize_callback' => 'bmp_sanitize_checkbox',
+		)		
+	);
+	$wp_customize->add_control(
+		'right_col',
+		array(
+			'type' => 'checkbox',
+			'label' => __('Enable right column', 'bmp'),
+			'section' => 'bmp_layout',
+		)
+	);
+
+
+
+//___Colors___//
 	//Primary color
 	$wp_customize->add_setting(
 		'primary_color',

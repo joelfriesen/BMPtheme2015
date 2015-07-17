@@ -14,7 +14,8 @@ nav {}
   ul.subhide{display:none;}
   ul.subshow{display:block;}
  .navarea {    
-    ul.menu { 
+    ul.menu,
+    div.menu ul { 
       list-style: none;
       margin:0;
       padding:0;
