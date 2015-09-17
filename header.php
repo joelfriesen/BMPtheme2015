@@ -36,16 +36,14 @@
   <?php endif; ?>
 
   <div class="topbar container col4"> 
-  <?php if ( get_theme_mod('description_display') ||  get_theme_mod('title_display') ) : ?>
+  <?php if ( get_theme_mod('description_display') &&  get_theme_mod('site_logo') ||  get_theme_mod('title_display') &&  get_theme_mod('site_logo') ) : ?>
   <div class="col span1">
   <?php else : ?>
   <div class="col span4">
   <?php endif; ?>
    
   <?php if ( get_theme_mod('site_logo') ) : ?>
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php bloginfo('name'); ?>" /></a>
-  <?php else : ?>
-    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php bloginfo('name'); ?>" /></a> 
   <?php endif; ?>
   
     </div>
